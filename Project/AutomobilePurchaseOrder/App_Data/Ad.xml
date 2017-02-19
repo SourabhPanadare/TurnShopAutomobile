@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>../Images/Sponsors/1.jpg</ImageUrl>
+    <Width>250</Width>
+    <Height>200</Height>
+    <Impressions>50</Impressions>
+    <Keyword>Banner</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>../Images/Sponsos/2.jpg</ImageUrl>
+    <Width>250</Width>
+    <Height>200</Height>
+    <Impressions>40</Impressions>
+    <Keyword>Banner</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>../Images/Sponsors/3.jpg</ImageUrl>
+    <Width>250</Width>
+    <Height>200</Height>
+    <Impressions>25</Impressions>
+    <Keyword>Banner</Keyword>
+  </Ad>
+  
+</Advertisements>

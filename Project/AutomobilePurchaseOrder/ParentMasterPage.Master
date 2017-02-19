@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ParentMasterPage.master.cs" Inherits="AutomobilePurchaseOrder.ParentMasterPage" %>
+
+<%@ Register Src="UserControl/Banner.ascx" TagName="BannerControl1"
+    TagPrefix="uc1" %>
+<%@ Register Src="UserControl/Sponsors.ascx" TagName="SponsorsControl1"
+    TagPrefix="uc2" %>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>TurnShop Automobile</title>
+    <link rel="stylesheet" type="text/css" href="~/style/Home.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+     
+     
+    <div id="wrapper">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        
+        
+        
+      
+      <div id ="banner">
+      
+       <uc1:BannerControl1 ID="BannerControl1" runat="server" />
+        
+     </div>
+     
+     
+     
+     
+    
+    <div id="navigation">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Bold="True">
+        </asp:SiteMapPath>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="content_area">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    
+    
+    
+    
+    <div id="sidebar">
+        <br />
+        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" 
+            Font-Bold="True" ForeColor="Black">
+        </asp:TreeView>
+        <br />
+        <br />
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+            SiteMapProvider="AutomobileSiteMap" />
+         
+        <uc2:SponsorsControl1 ID="SponsorsControl1" runat="server" />   
+         
+    </div>
+    
+    
+    
+    <div id="footer" align="center">
+     All Rights Reserved 2014</p>
+    </div>
+  </div>    
+
+    </form>
+</body>
+</html>
